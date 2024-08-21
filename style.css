@@ -92,6 +92,24 @@ body {
     animation: fadeInUp 1.2s forwards 0.5s;
 }
 
+.card-content h3 {
+    font-size: 19px; /* Ajusta o tamanho da fonte do título */
+    margin-bottom: 10px;
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    overflow: hidden; /* Oculta o excesso de texto */
+    text-overflow: ellipsis; /* Adiciona "..." ao final do texto truncado */
+}
+
+.card-content p {
+    font-size: 15px; /* Ajusta o tamanho da fonte da descrição */
+    color: #ccc;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* Limita a descrição a 2 linhas */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .card-footer {
     padding: 15px;
     background-color: #1f1f1f;
@@ -133,4 +151,4 @@ button {
 button:hover {
     background-color: #ff3399;
     transform: scale(1.05);
-      }
+}
